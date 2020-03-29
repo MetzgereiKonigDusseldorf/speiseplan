@@ -3,6 +3,34 @@
 
 @import "{{ site.theme }}";
 
+// https://css-tricks.com/almanac/properties/p/page-break/
+@media print {
+	h2 {
+		page-break-before: always;
+	}
+	h3, h4 {
+		page-break-after: avoid;
+	}
+	pre, blockquote, strong, a {
+		page-break-inside: avoid;
+	}
+}
+
+a {
+	color: #cc3c37;
+	transition: color .2s;
+	font-weight: 600;
+}
+
+a:hover, a:focus {
+	color: #aa0b02;
+	font-weight: 600;
+}
+
+strong {
+	font-size: 1.2rem;
+}
+
 header {
 	p {
 		font-size: 1.2rem;
@@ -22,7 +50,24 @@ header {
 .smaller {
 	font-size: 0.8rem;
 
-	h4, p {
+	h2, h3, h4, p {
 		margin-bottom: 0.5rem;
+	}
+}
+
+.qrcode {
+	width: 237px;
+	.caption {
+		display: none;
+	}
+}
+
+@media print {
+	.qrcode {
+		width: 80%;
+		.caption {
+			display: block;
+			text-align: center;
+		}
 	}
 }
