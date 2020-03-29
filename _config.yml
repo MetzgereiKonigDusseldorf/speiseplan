@@ -1,1 +1,8 @@
 theme: jekyll-theme-minimal
+title: Metzgerei König Düsseldorf
+description: "Lessingstrasse 29<br />40227 Düsseldorf"
+show_downloads: false
+lang: DE
+github:
+  is_project_page: false
+  is_user_page: false
