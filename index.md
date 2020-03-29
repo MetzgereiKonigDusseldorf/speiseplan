@@ -97,4 +97,5 @@ Bitte kontaktieren Sie uns bei weitere Fragen.
 <h4>Datenschutzerklärung</h4>
 <p>Diese Website verwendet keine Cookies und verfolgt Sie nicht.</p>
 <p><a href="mailto:webmaster@johanbove.info?subject=Speiseplan%20Metzgerei%20König">Contact webmaster</a></p>
+<p>Letze Aktualisierung: 2020-03-29 19:21</p>
 </div>
