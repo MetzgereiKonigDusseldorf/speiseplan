@@ -94,5 +94,7 @@ Bitte kontaktieren Sie uns bei weitere Fragen.
 <div class="smaller">
 <h4>Haftungsausschluss</h4>
 <p>Die Informationen auf dieser Website können ohne vorherige Ankündigung geändert werden.</p>
-<p>Diese Website verwendet keine Cookies.</p>
+<h4>Datenschutzerklärung</h4>
+<p>Diese Website verwendet keine Cookies und verfolgt Sie nicht.</p>
+<p><a href="mailto:webmaster@johanbove.info?subject=Speiseplan%20Metzgerei%20König">Contact webmaster</a></p>
 </div>
