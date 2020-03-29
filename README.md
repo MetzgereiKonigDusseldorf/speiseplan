@@ -43,7 +43,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 ### Support or Contact
 
-This site was set up and created by [https://github.com/johanbove](Johan Bové).
+This site was set up and created by [Johan Bové](https://github.com/johanbove).
 
 > **DISCLAIMER:** Johan Bové does not work for **Metzgerei König**, nor does he accept any legal responsibility of possible errors in the data on this website.
 
