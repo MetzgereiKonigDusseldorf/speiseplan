@@ -1,0 +1,18 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.flat-list {
+	padding: 0;
+	margin: 1rem 0;
+	list-style-type: none;
+	li {
+		padding: 0;
+		display: inline-block;
+	}
+}
+
+.smaller {
+	font-size: 0.8rem;
+}

@@ -1,26 +1,39 @@
 rindergulasch:
   name: Rindergulasch
+  allergens: a,h,c,g,d
 nudeln:
   name: Nudeln
+  allergens: a,c,g,i
 salat:
   name: Salat
+  allergens: "1,2"
 pfannengyros:
   name: Pfannengyros
+  allergens: f,1,2,3
 pommes:
   name: Pommes
+  allergens: 5
 schlessichesweissewurst:
   name: Schlessische Weiße Wurst
+  allergens: i,1,2,5
 kartoffelpuree:
   name: Kartoffelpüree
+  allergens: "1,2"
 sauerkraut:
   name: Sauerkraut
+  allergens: "1,2,3,4"
 gemuse:
   name: Gemüse
+  allergens: a,i,1
 frikadellen:
   name: Frikadellen
+  allergens: a,c
 kartoffeln:
   name: Kartoffeln
+  allergens: "5"
 schnitzeloderbratfisch:
   name: Schnitzel od. Bratfisch
+  allergens: a,c,h,g,d
 kroketten:
   name: Kroketten
+  allergens: a,c,g,i
