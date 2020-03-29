@@ -16,7 +16,7 @@ Bestellungen via Telefon: **<a href="tel:+49211786777">0211 78 67 77</a>**
 {% for todaysMenu in site.data.menu %}
 	{% if todaysMenu.week == page.week %}
 		{%- assign day = todaysMenu.day -%}
-		{% if forloop.index == 1 %}
+		{%- if forloop.index == 1 %}
 		<thead>
 			<tr>
 				<th>Tag</th>
@@ -26,7 +26,7 @@ Bestellungen via Telefon: **<a href="tel:+49211786777">0211 78 67 77</a>**
 			</tr>
 		</thead>
 		<tbody>
-		{% endif %}
+		{%- endif %}
 			<tr>
 				<td>
 					{{- site.data.week[todaysMenu.day].name -}}
@@ -67,6 +67,8 @@ Bestellungen via Telefon: **<a href="tel:+49211786777">0211 78 67 77</a>**
 {% endfor %}
 </ul>
 
+Bitte kontaktieren Sie uns bei weitere Fragen.
+
 ## Öffnungszeiten
 
 <table>
@@ -79,6 +81,18 @@ Bestellungen via Telefon: **<a href="tel:+49211786777">0211 78 67 77</a>**
 	{% endfor %}
 </table>
 
-## Haftungsausschluss
+## Zugang über Mobiltelefon
 
-Die Informationen auf dieser Website können ohne vorherige Ankündigung geändert werden. Bitte kontaktieren Sie uns vorab telefonisch.
+<figure style="width:232px">
+<a href="/assets/img/qr-metzgereikonigd.svg">
+<img src="/assets/img/qr-metzgereikonigd.svg" title="QR code für diese Website" alt="https://metzgereikonigdusseldorf.github.io/speiseplan/" />
+</a>
+</figure>
+
+---
+
+<div class="smaller">
+<h4>Haftungsausschluss</h4>
+<p>Die Informationen auf dieser Website können ohne vorherige Ankündigung geändert werden.</p>
+<p>Diese Website verwendet keine Cookies.</p>
+</div>
