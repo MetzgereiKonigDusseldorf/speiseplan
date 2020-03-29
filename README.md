@@ -45,6 +45,6 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 This site was set up and created by [https://github.com/johanbove](Johan Bové).
 
-**DISCLAIMER:** He does not work for **Metzgerei König**, nor does he accept any legal responsibility of possible errors in the data on this website.
+> **DISCLAIMER:** Johan Bové does not work for **Metzgerei König**, nor does he accept any legal responsibility of possible errors in the data on this website.
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
