@@ -6,7 +6,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Data Files
 
-All the "Speiseplan" information is stored in files within the `_data_` folder.
+All the "Speiseplan" information is stored in files within the `_data` folder.
 
 |File|Description|
 |:---|:----------|
