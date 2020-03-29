@@ -84,8 +84,8 @@ Bitte kontaktieren Sie uns bei weitere Fragen.
 ## Zugang über Mobiltelefon
 
 <figure style="width:232px">
-<a href="/assets/img/qr-metzgereikonigd.svg">
-<img src="/assets/img/qr-metzgereikonigd.svg" title="QR code für diese Website" alt="https://metzgereikonigdusseldorf.github.io/speiseplan/" />
+<a href="assets/img/qr-metzgereikonigd.svg">
+<img src="assets/img/qr-metzgereikonigd.svg" title="QR code für diese Website" alt="https://metzgereikonigdusseldorf.github.io/speiseplan/" />
 </a>
 </figure>
 
