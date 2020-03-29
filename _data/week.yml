@@ -1,10 +1,12 @@
 montag:
-    name: Montag
+  name: Montag
 dienstag:
-    name: Dienstag
+  name: Dienstag
 mittwoch:
   name: Mittwoch
 donnerstag:
   name: Donnerstag
 freitag:
   name: Freitag
+samstag:
+  name: Samstag

@@ -1,5 +1,6 @@
 ---
 title: "Speiseplan Metzgerei König"
+week: "2020-03-30 - 2020-04-30"
 ---
 
 # Speiseplan Metzgerei König
@@ -9,51 +10,52 @@ Bestellungen via Telefon: **<a href="tel:+49211786777">0211 78 67 77</a>**
 * <a href="https://www.yelp.de/map/metzgerei-k%C3%B6nig-d%C3%BCsseldorf">Wegbeschreibung (via Yelp)</a>
 * <a href="https://www.yelp.de/biz/metzgerei-könig-düsseldorf">Bewertet auf Yelp</a>
 
+## Speiseplan Woche: {{ page.week }}
+
 <table>
 {% for todaysMenu in site.data.menu %}
-{%- assign day = todaysMenu.day -%}
-	{% if forloop.index == 1 %}
-	<thead>
-	<tr>
-		<th colspan="3">Speiseplan Woche: {{ todaysMenu.week }}</th>
-	</tr>
-	<tr>
-		<th>Tag</th>
-		<th>Gericht</th>
-		<th>Info</th>
-		<th>Preis</th>
-	</tr>
-	</thead>
-	<tbody>
+	{% if todaysMenu.week == page.week %}
+		{%- assign day = todaysMenu.day -%}
+		{% if forloop.index == 1 %}
+		<thead>
+			<tr>
+				<th>Tag</th>
+				<th>Gericht</th>
+				<th>Info</th>
+				<th>Preis</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% endif %}
+			<tr>
+				<td>
+					{{- site.data.week[todaysMenu.day].name -}}
+				</td>
+				<!-- dish -->
+				<td>
+					{%- assign dishes = todaysMenu.dish | split: "+" -%}
+					{% for dish in dishes -%}
+						{% assign theDish = site.data.dishes[dish] -%}
+						{{ theDish.name }}{% if forloop.index != forloop.length %}<br/>{% endif %}
+					{%- endfor -%}
+				</td>
+				<!-- allergens -->
+				<td class="smaller">
+					{%- assign dishes = todaysMenu.dish | split: "+" -%}
+					{% for dish in dishes -%}
+						{% assign theDish = site.data.dishes[dish] -%}
+						{{ theDish.allergens | replace: ",", ", " }}
+						{% if forloop.index != forloop.length %}<br/>{% endif %}
+					{%- endfor -%}
+				</td>
+				<td>&euro; {{ todaysMenu.price }}</td>
+			</tr>
+		{% if forloop.index == forloop.length %}
+		</tbody>
+		{% endif %}
+	{% else %}
+	<tr><td>Keine Gerichte heute</td></tr>
 	{% endif %}
-	<tr>
-		<td>
-			 {{- site.data.week[todaysMenu.day].name -}}
-		</td>
-		<!-- dish -->
-		<td>
-			{%- assign dishes = todaysMenu.dish | split: "+" -%}
-			{% for dish in dishes -%}
-				{% assign theDish = site.data.dishes[dish] -%}
-				{{ theDish.name }}{% if forloop.index != forloop.length %}<br/>{% endif %}
-			{%- endfor -%}
-		</td>
-		<!-- allergens -->
-		<td class="smaller">
-			{%- assign dishes = todaysMenu.dish | split: "+" -%}
-			{% for dish in dishes -%}
-				{% assign theDish = site.data.dishes[dish] -%}
-				{{ theDish.allergens | replace: ",", ", " }}
-				{% if forloop.index != forloop.length %}<br/>{% endif %}
-			{%- endfor -%}
-		</td>
-		<td>&euro; {{ todaysMenu.price }}</td>
-	</tr>
-	{% if forloop.index == forloop.length %}
-	</tbody>
-	{% endif %}
-{% else %}
-<tr><td>Keine Gerichte heute</td></tr>
 {% endfor %}
 </table>
 
@@ -64,3 +66,19 @@ Bestellungen via Telefon: **<a href="tel:+49211786777">0211 78 67 77</a>**
 	<li>{{ allergen.id }}) {{ allergen.name }}</li>
 {% endfor %}
 </ul>
+
+## Öffnungszeiten
+
+<table>
+	{% for _day in site.data.openinghours %}
+	<tr>
+		<td>{{- site.data.week[_day.day].name -}}</td>
+		<td>{{- _day.from -}}</td>
+		<td>{{- _day.to -}}</td>
+	</tr>
+	{% endfor %}
+</table>
+
+## Haftungsausschluss
+
+Die Informationen auf dieser Website können ohne vorherige Ankündigung geändert werden. Bitte kontaktieren Sie uns vorab telefonisch.
