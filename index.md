@@ -7,10 +7,9 @@ title: "Metzgerei König Düsseldorf"
 Lessingstrasse 29<br />
 40227 Düsseldorf
 
-Tel: <a href="tel:+49211786777">0211 78 67 77</a>
-
-<a href="https://www.yelp.de/biz/metzgerei-könig-düsseldorf">Bewertet uns auf Yelp</a>
-<a href="https://www.yelp.de/map/metzgerei-k%C3%B6nig-d%C3%BCsseldorf">Wegbeschreibung</a>
+* Tel: <a href="tel:+49211786777">0211 78 67 77</a>
+* <a href="https://www.yelp.de/map/metzgerei-k%C3%B6nig-d%C3%BCsseldorf">Wegbeschreibung</a>
+* <a href="https://www.yelp.de/biz/metzgerei-könig-düsseldorf">Bewertet uns auf Yelp</a>
 
 ## Speiseplan
 
@@ -20,7 +19,7 @@ Tel: <a href="tel:+49211786777">0211 78 67 77</a>
 	{% if forloop.index == 1 %}
 	<thead>
 	<tr>
-		<th colspan="2">Speiseplan Woche: {{ todaysMenu.week }}</th>
+		<th colspan="3">Speiseplan Woche: {{ todaysMenu.week }}</th>
 	</tr>
 	<tr>
 		<th>Tag</th>
