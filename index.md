@@ -91,9 +91,9 @@ Scannen Sie das Bild mit Ihrem Handy ein, um einen direkten Zugang zu die Metzge
 
 <figure class="qrcode">
 	<a href="assets/img/qr-metzgereikonigd.svg">
-		<img src="assets/img/qr-metzgereikonigd.svg" title="QR code für diese Website" alt="https://metzgereikonigdusseldorf.github.io/speiseplan/" />
+		<img src="assets/img/qr-metzgereikonigd.svg" title="QR code für diese Website" alt="QR Code für https://metzgereikonigdusseldorf.github.io/speiseplan/" />
 	</a>
-	<div class="caption">https://metzgereikonigdusseldorf.github.io/speiseplan/</div>
+	<figcaption>https://metzgereikonigdusseldorf.github.io/speiseplan/</figcaption>
 </figure>
 
 ---

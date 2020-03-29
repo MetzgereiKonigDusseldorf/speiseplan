@@ -57,7 +57,7 @@ header {
 
 .qrcode {
 	width: 237px;
-	.caption {
+	figcaption {
 		display: none;
 	}
 }
@@ -65,7 +65,7 @@ header {
 @media print {
 	.qrcode {
 		width: 80%;
-		.caption {
+		figcaption {
 			display: block;
 			text-align: center;
 		}
