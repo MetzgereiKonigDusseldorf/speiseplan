@@ -1,8 +1,9 @@
 ---
 title: "Speiseplan Metzgerei König"
-week: "2020-03-30 - 2020-04-30"
+menuStart: "2020-03-30"
+menuEnd: "2020-04-30"
 ---
-
+{%- assign menuPeriod = page.menuStart | append: " - " | append: page.menuEnd -%}
 # Speiseplan Metzgerei König
 
 Bestellungen via Telefon: **<a href="tel:+49211786777">0211 78 67 77</a>**
@@ -10,11 +11,11 @@ Bestellungen via Telefon: **<a href="tel:+49211786777">0211 78 67 77</a>**
 * <a href="https://www.yelp.de/map/metzgerei-k%C3%B6nig-d%C3%BCsseldorf">Wegbeschreibung (via Yelp)</a>
 * <a href="https://www.yelp.de/biz/metzgerei-könig-düsseldorf">Bewertet auf Yelp</a>
 
-## Speiseplan Woche: {{ page.week }}
+## Speiseplan für {{ page.menuStart | date: "%d.%m.%y"  }} bis {{ page.menuEnd  | date: "%d.%m.%y"  }}
 
 <table>
 {% for todaysMenu in site.data.menu %}
-	{% if todaysMenu.week == page.week %}
+	{% if todaysMenu.week == menuPeriod %}
 		{%- assign day = todaysMenu.day -%}
 		{%- if forloop.index == 1 %}
 		<thead>
@@ -48,7 +49,8 @@ Bestellungen via Telefon: **<a href="tel:+49211786777">0211 78 67 77</a>**
 						{% if forloop.index != forloop.length %}<br/>{% endif %}
 					{%- endfor -%}
 				</td>
-				<td>&euro; {{ todaysMenu.price }}</td>
+				<!-- price -->
+				<td>&euro;{{ todaysMenu.price }}</td>
 			</tr>
 		{% if forloop.index == forloop.length %}
 		</tbody>
@@ -67,9 +69,11 @@ Bestellungen via Telefon: **<a href="tel:+49211786777">0211 78 67 77</a>**
 {% endfor %}
 </ul>
 
-Bitte kontaktieren Sie uns bei weitere Fragen.
+Bei weitere Fragen kontaktieren Sie bitte Metzgerei König via Telefon auf die <a href="tel:+49211786777">0211 78 67 77</a>.
 
 ## Öffnungszeiten
+
+ Metzgerei König in Düsseldorf hat durchgehend geöffnet!
 
 <table>
 	{% for _day in site.data.openinghours %}
@@ -83,19 +87,22 @@ Bitte kontaktieren Sie uns bei weitere Fragen.
 
 ## Zugang über Mobiltelefon
 
-<figure style="width:232px">
-<a href="assets/img/qr-metzgereikonigd.svg">
-<img src="assets/img/qr-metzgereikonigd.svg" title="QR code für diese Website" alt="https://metzgereikonigdusseldorf.github.io/speiseplan/" />
-</a>
+Scannen Sie das Bild mit Ihrem Handy ein, um einen direkten Zugang zu die Metzgerei König Website zu erhalten.
+
+<figure class="qrcode">
+	<a href="assets/img/qr-metzgereikonigd.svg">
+		<img src="assets/img/qr-metzgereikonigd.svg" title="QR code für diese Website" alt="https://metzgereikonigdusseldorf.github.io/speiseplan/" />
+	</a>
+	<div class="caption">https://metzgereikonigdusseldorf.github.io/speiseplan/</div>
 </figure>
 
 ---
 
 <div class="smaller">
-<h4>Haftungsausschluss</h4>
-<p>Die Informationen auf dieser Website können ohne vorherige Ankündigung geändert werden.</p>
-<h4>Datenschutzerklärung</h4>
-<p>Diese Website verwendet keine Cookies und verfolgt Sie nicht.</p>
-<p><a href="mailto:webmaster@johanbove.info?subject=Speiseplan%20Metzgerei%20König">Webmaster kontaktieren</a></p>
-<p>Letze Aktualisierung: 2020-03-29 19:21</p>
+	<h2>Haftungsausschluss</h2>
+	<p>Die Informationen auf die Metzgerei König aus Düsseldorf Website können ohne vorherige Ankündigung geändert werden.</p>
+	<h2>Datenschutzerklärung</h2>
+	<p>Die Metzgerei König Website verwendet keine Cookies und verfolgt Sie nicht.</p>
+	<p><a href="mailto:webmaster@johanbove.info?subject=Speiseplan%20Metzgerei%20König">Webmaster kontaktieren</a></p>
+	<p>Letze Aktualisierung: 2020-03-29 23:21</p>
 </div>
